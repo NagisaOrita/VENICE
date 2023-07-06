@@ -1,0 +1,262 @@
+.hero-container {
+    position: relative;
+    height: 100vh;
+}
+
+/* キャッチコピーを真ん中に表示 */
+.catch-copy {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+/* SCROLL部分 アニメーション */
+#scroll {
+    margin-top: 8rem;
+}
+
+.wrap {
+    display: flex;
+    overflow-x: hidden;
+    /* 変更：横スクロールを有効にするためにscrollを指定 */
+    overflow-y: hidden;
+    /* 変更：縦スクロールを無効にするためにhiddenを指定 */
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.scroll-list {
+    flex: 0 0 auto;
+    margin-right: 20px;
+    white-space: nowrap;
+    /* 追加：要素を一行に折り返さないようにするためにnowrapを指定 */
+}
+
+.slideshow-list {
+    display: inline-flex;
+    /* 変更：水平方向に並べるためにinline-flexを指定 */
+    animation: loop-slide 50s infinite linear;
+}
+
+.slideshow {
+    flex: 0 0 auto;
+    margin-right: 45px;
+}
+
+.slideshow img {
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+}
+
+@keyframes loop-slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.is-reverse-slide {
+    margin-left: -100%;
+    animation: loop-slide-r 50s infinite linear reverse;
+}
+
+@keyframes loop-slide-r {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+
+/* マウススクロールを無効にするための追加CSS */
+.wrap::-webkit-scrollbar {
+    width: 0.5em;
+    background-color: transparent;
+}
+
+.wrap::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+.wrap::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+/* ABOUT */
+/* ABOUT */
+/* ABOUT */
+#about{
+    margin-top: 8rem;
+}
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5rem 4.73rem 2rem 5.62rem;
+}
+
+.about-txt {
+    display: flex;
+    width: 63rem;
+    flex-direction: column;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 5rem;
+}
+
+.about-button {
+    text-align: right;
+    margin: 0 4.73rem auto auto;
+}
+
+.about-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* MEMBER */
+/* MEMBER */
+/* MEMBER */
+#members {
+    margin-top: 12rem;
+}
+
+.member-name-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.member-btn a {
+    width: 50%;
+    height: 50%;
+}
+
+.member-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.member-box {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 5rem;
+    max-width: 1120px;
+}
+
+.member-img {
+    width: 32.4rem;
+    height: 40rem;
+}
+
+.position {
+    margin-top: 1.5rem;
+    color: #DDE6F6;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem;
+    letter-spacing: 0.17rem;
+}
+
+.member-name-heading {
+    margin-top: 1.56rem;
+    color: #DDE6F6;
+    font-size: 3.1831rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.1831rem;
+    letter-spacing: 0.7639rem;
+}
+
+.member-read {
+    /* white-space:nowrap; */
+    margin-top: .4rem;
+}
+
+/* BUSINESS */
+/* BUSINESS */
+/* BUSINESS */
+#business {
+    margin-top: 12rem;
+}
+
+.business-img {
+    width: 50rem;
+    height: 27rem;
+}
+
+.business-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.business-txtbox {
+    width: 47.8rem;
+}
+
+.business-box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.business-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 7rem;
+    gap: 8rem;
+}
+
+.business-box:nth-child(odd) .business-img {
+    order: 1;
+    /* 追加：奇数番目の要素の画像を右に移動 */
+}
+
+.business-box:nth-child(odd) .business-txtbox {
+    order: 2;
+    /* 追加：奇数番目の要素のテキストを左に移動 */
+}
+
+.business-box:nth-child(even) .business-img {
+    order: 2;
+    /* 追加：偶数番目の要素の画像を左に移動 */
+}
+
+.business-box:nth-child(even) .business-txtbox {
+    order: 1;
+    /* 追加：偶数番目の要素のテキストを右に移動 */
+}
+
+.business-en {
+    margin-bottom: 1.1rem;
+}
+
+.business-box-title {
+    margin-bottom: 1.1rem;
+}
+
+.sub-title {
+    margin-top: 1.1rem;
+    margin-left: 1.6rem;
+}

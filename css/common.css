@@ -1,0 +1,615 @@
+/* privacy_policy.css */
+html {
+    height: 100%;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Josefin Sans', "yugothic", "yu-gothic", "游ゴシック体", "游ゴシック", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO", sans-serif;
+    height: 100%;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 28px;
+    letter-spacing: 1.2px;
+    color: #DDE6F6;
+    margin: 0;
+}
+
+img {
+    border: 0;
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+    object-fit: cover;
+}
+
+figure {
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    color: var(--white);
+}
+
+li {
+    list-style-type: none;
+}
+
+.c-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 0;
+    border-radius: 0;
+    background: #ccc;
+}
+
+button {
+    background: none;
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 0;
+}
+
+hr {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    color: var(--white);
+    background: var(--white);
+}
+
+/* COLOR ROOTS */
+/* COLOR ROOTS */
+/* COLOR ROOTS */
+:root {
+    --white: #DDE6F6;
+    --gray: #CBD1DB;
+    --blue: #1A8AC1;
+    --lightblue: #25AFE5;
+    --deepblue: #0057A6;
+    --orange: #E5B65B;
+}
+
+
+/* FONT FONT FONT ------- */
+/* FONT FONT FONT ------- */
+/* FONT FONT FONT ------- */
+
+a {
+    font-family: 'Josefin Sans', "yugothic", "yu-gothic", "游ゴシック体", "游ゴシック", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO", sans-serif;
+}
+
+.catch-copy {
+    color: #CBD1DB;
+    font-size: 73.799px;
+    font-family: YuGothic;
+    font-weight: 700;
+    line-height: 107.492px;
+    letter-spacing: 7.38px;
+    white-space: nowrap;
+}
+
+
+.sub-title {
+    font-size: 3.225rem;
+    font-weight: 500;
+    letter-spacing: 0.4193rem;
+}
+
+.lv3-heading {
+    color: #DDE6F6;
+    font-size: 5.215rem;
+    font-weight: 600;
+    line-height: 6.32rem;
+    letter-spacing: 0.5215rem;
+}
+
+.lv4-heading {
+    color: #DDE6F6;
+    font-size: 1.98944rem;
+    line-height: 1.98944rem;
+    letter-spacing: 0.47744rem;
+}
+
+.position {
+    color: #DDE6F6;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    letter-spacing: 0.10625rem;
+}
+
+.normal-txt {
+    color: #DDE6F6;
+    font-size: 1.5rem;
+    line-height: 3.4375rem;
+}
+
+.business-box-title {
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 5.0881rem;
+    letter-spacing: 0.064rem;
+}
+
+.business-en {
+    font-size: 2.2367rem;
+    letter-spacing: 0.0447rem;
+}
+
+.business-txt {
+    font-size: 1.4rem;
+    line-height: 3.37rem;
+    letter-spacing: 0.255rem;
+}
+
+.recruit-txt {
+    color: #E8EBF4;
+    font-size: 2.9455rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.9455rem;
+}
+
+.about-title {
+    font-size: 4.522rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 5.4802rem;
+    letter-spacing: 0.3165rem;
+}
+
+.message-txtbox p{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 3.37rem;
+    letter-spacing: 0.255rem;
+}
+
+/* ボタンのCSS modernと stylish */
+/* ボタンのCSS modernと stylish */
+/* ボタンのCSS modernと stylish */
+.modern-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid var(--white);
+    background-color: transparent;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.modern-button::before {
+    content: "";
+    position: absolute;
+    left: -100%;
+    top: 50%;
+    width: 100%;
+    height: 2px;
+    background-color: var(--orange);
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+}
+
+.modern-button:hover {
+    border-color: var(--orange);
+}
+
+.modern-button:hover a {
+    color: var(--orange);
+}
+
+.modern-button:hover::before {
+    transform: translateX(200%);
+}
+
+
+.stylish-button {
+    display: inline-block;
+    padding: 12px 24px;
+    border: none;
+    background-color: #ff6600;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.stylish-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333333;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+    z-index: -1;
+}
+
+.stylish-button:hover {
+    background-color: #333333;
+    color: #ff6600;
+}
+
+.stylish-button:hover::before {
+    transform: scaleX(1);
+}
+
+.stylish-button {
+    display: inline-block;
+    padding: 12px 24px;
+    border: none;
+    background-color: #333333;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.stylish-button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ff6600;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: -1;
+}
+
+.stylish-button:hover {
+    background-color: #ff6600;
+    color: #333333;
+}
+
+.stylish-button:hover::before {
+    transform: translateX(0);
+}
+
+/* HEADER -------- */
+/* HEADER -------- */
+/* HEADER -------- */
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 34px 46px;
+}
+
+.header-logo {
+    width: 128px;
+}
+
+.header-nav ul {
+    display: flex;
+    gap: 34px;
+}
+
+/* HEADER HOVER */
+/* HEADER HOVER */
+/* HEADER HOVER */
+/*==================================================
+共通　横並びのための設定
+===================================*/
+
+.gnavi {
+    display: flex;
+    flex-wrap: wrap;
+    /*スマホ表示折り返し用なのでPCのみなら不要*/
+    list-style: none;
+}
+
+.gnavi li a {
+    display: block;
+    text-decoration: none;
+}
+
+/*==================================================
+　5-3-3 左から右に線が伸びる（下部）
+===================================*/
+.gnavi li a {
+    /*線の基点とするためrelativeを指定*/
+    position: relative;
+}
+
+.gnavi li.current a,
+.gnavi li a:hover {
+    color: var(--orange);
+}
+
+.gnavi li a::after {
+    content: '';
+    /*絶対配置で線の位置を決める*/
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    /*線の形状*/
+    width: 80%;
+    height: 2px;
+    background: var(--orange);
+    /*アニメーションの指定*/
+    transition: all .2s;
+    transform: scale(0, 1);
+    /*X方向0、Y方向1*/
+    transform-origin: left top;
+    /*左上基点*/
+}
+
+/*現在地とhoverの設定*/
+.gnavi li.current a::after,
+.gnavi li a:hover::after {
+    transform: scale(1, 1);
+    /*X方向にスケール拡大*/
+}
+
+/*  */
+/*  */
+/*  */
+
+
+.lv2-heading {
+    color: #DDE6F6;
+    font-size: 7.31325rem;
+    font-family: Josefin Sans;
+    font-weight: 300;
+    line-height: 7.77875rem;
+    letter-spacing: 0.14625rem;
+    height: 85px;
+}
+
+.lv2-heading img {
+    height: 100%;
+}
+
+/* RECRUIT */
+#recruit {
+    margin-top: 18rem;
+}
+
+.recruit-wrapper {
+    max-width: calc(100rem - 80px);
+    /* height: 36.3rem; */
+    border-radius: 3rem;
+    background: #77B6D7;
+    margin: 0 auto;
+    padding: 74px 40px 40px 40px;
+    position: relative;
+}
+
+.recruit-inner {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* RecruitBtn */
+.recruit-btnbox {
+    width: 125px;
+    position: absolute;
+    top: 50%;
+    right: 6%;
+    transform: translate(0%, -50%);
+}
+
+/* Recruit-font */
+.recruit-txt {
+    margin-bottom: 1.6rem;
+}
+
+.recruit-txtbox {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 670px;
+    height: 276px;
+}
+
+.recruit-design-l,
+.recruit-design-r {
+    position: absolute;
+}
+
+.recruit-design-r {
+    top: 0;
+    right: 0;
+}
+
+.recruit-design-l {
+    bottom: 0;
+    left: 0;
+}
+
+/* Recruit-title */
+.recruit-title {
+    position: absolute;
+    top: -15%;
+}
+
+.recruit-btn-txt {
+    margin-top: 0.7rem;
+    text-align: center;
+    color: #E8EBF4;
+    font-size: 1.9842rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.7535rem;
+}
+
+
+/* FOOTER */
+#footer {
+    margin-top: 12rem;
+}
+
+.footer-inner {
+    background: linear-gradient(135deg, #F2F7FF 99.98%, #CCF1FD 99.99%);
+    color: #1A8AC1;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.048rem;
+    margin-bottom: 50px;
+}
+
+.footer-up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--blue);
+}
+
+.footer-dwn {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* コンタクトボタン */
+.footer-btn-contact a {
+    display: flex;
+    align-self: center;
+    gap: 24px;
+    color: #fff;
+}
+
+.footer-nav a {
+    color: #1A8AC1;
+    font-size: 2.4rem;
+    font-family: Josefin Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.048rem;
+}
+
+.footer-nav .nav-list {
+    margin-right: 4rem;
+}
+
+.footer-nav {
+    padding: 4rem;
+}
+
+.footer-btn-contact {
+    background: #E5B65B;
+    width: 32rem;
+    height: 10.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid var(--blue);
+}
+
+.footer-btn-contact img {
+    object-fit: contain;
+}
+
+.footer-venice {
+    width: 50vw;
+}
+
+.footer-contactinfo {
+    width: 32rem;
+    border-left: 1px solid var(--blue);
+}
+
+.footer-info,
+.footer-contactinfo {
+    color: #1A8AC1;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.25rem;
+}
+
+.footer-info-l {
+    margin-top: 3.5rem;
+    margin-left: 4.5rem;
+    margin-bottom: 5.3rem;
+}
+
+.footer-info-l li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-contactinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-info-r {
+    margin-left: 4.7rem;
+}
+
+.footer-info-r li {
+    margin-bottom: 1rem;
+}
+
+.copyright {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    color: #E8EBF4;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.056rem;
+}
+
+
+/* ANIMATION FADE IN */
+/* ANIMATION FADE IN */
+/* ANIMATION FADE IN */
+/*  */
+/*  */
+/* スライドインアニメーション */
+@keyframes slide-in {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* アニメーションの初期設定 */
+.slidein-animate {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+/* アニメーションの実行設定 */
+.slidein-animate.active {
+    animation: slide-in 0.5s forwards;
+    transition: all 0.5s ease-in-out;
+}

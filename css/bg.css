@@ -1,0 +1,138 @@
+/* 共通 */
+html,
+body,
+#canvas {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+    /* background: radial-gradient(circle at bottom, #0057A6 0%, #0099ff 50%, #25AFE5 100%); */
+    background: radial-gradient(circle at bottom, #000d18 0%, #00558d 50%, #40bced 100%);
+    background-size: 200% 200%;
+    animation: wave 5s linear infinite;
+}
+
+@keyframes wave {
+    0% {
+        background-position: 0% 100%;
+    }
+
+    50% {
+        background-position: 100% 0%;
+    }
+
+    100% {
+        background-position: 0% 100%;
+    }
+}
+
+
+#wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+body,
+html {
+    margin: 0;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    overflow-y: scroll;
+    /* コンテンツが縦方向にスクロールするように設定 */
+    -webkit-overflow-scrolling: touch;
+    /* スムーズなスクロールを有効にする場合は追加 */
+    position: absolute;
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    z-index: 2;
+    /* canvasより前面に表示する */
+    background: transparent;
+    /* 背景色を透明にする */
+}
+
+.v-logo-bg {
+    position: fixed;
+    width: 300px;
+    
+    opacity: .5;
+    background-blend-mode: overlay;
+    mix-blend-mode: overlay;
+}
+
+.v-logo-bg {
+    width: 300px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    perspective: 1000px;
+}
+
+.v-logo-bg img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+
+.rotate-scale-down {
+    -webkit-animation: rotate-scale-down 0.65s linear both infinite;
+    animation: rotate-scale-down 0.65s linear both infinite;
+}
+
+.rotate-scale-down {
+    animation: rotate-scale-down 0.65s linear 5s infinite;
+    animation-delay: 3s;
+    /* delay before the animation starts */
+    animation-duration: 2s;
+    /* actual duration of the animation */
+}
+
+.rotate-scale-down {
+    animation: rotate-scale-down 6.25s linear both infinite;
+}
+
+@keyframes rotate-scale-down {
+
+    0%,
+    4% {
+        transform: scale(1) rotateZ(0);
+    }
+
+    8% {
+        transform: scale(0.9) rotateY(180deg);
+    }
+
+    12%,
+    100% {
+        transform: scale(1) rotateY(360deg);
+    }
+}

@@ -1,0 +1,91 @@
+.person-info-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 15.8rem;
+    margin-top: 8.4rem;
+    margin-bottom: 4.5rem;
+}
+
+.member-voice-title {
+    font-size: 3.202rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 5.0782rem;
+    letter-spacing: 0.0406rem;
+    margin-bottom: 3rem;
+}
+
+.person-info-txt {
+    font-size: 1.3rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3.4rem;
+    letter-spacing: 0.15rem;
+    width: 46rem;
+}
+
+.person-info-list:last-child {
+    font-size: 3.1831rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.1831rem;
+    letter-spacing: 0.7639rem;
+    margin-top: 1.8rem;
+}
+
+
+/* 生まれ変わりセクション */
+/* 生まれ変わりセクション */
+/* 生まれ変わりセクション */
+.our-reborn-inner {
+    display: flex;
+    gap: 12rem;
+    background-image: url(../images/bg-title-our-reason.png);
+    background-repeat: no-repeat;
+    padding-left: 12rem;
+    padding-right: 9rem;
+}
+
+.member-voice-subtitle {
+    margin-bottom: 4.5rem;
+}
+.member-voice-txtbox-heading-box {
+    max-width: 43.8rem;
+}
+
+.member-voice-txt {
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3.4rem;
+    letter-spacing: 0.29rem;
+    max-width: 56rem;
+    /* width: 43%; */
+}
+
+.story-title{
+    margin-bottom: 4.8rem;
+}
+
+.member-voice-img1{
+    max-width: 39rem;
+}
+
+/* MEANING */
+/* MEANING */
+/* MEANING */
+.meaning-inner{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    background-image: url(../images/sub-title-meaning.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.meaning-txt{
+    max-width: 73.3rem;
+}
+.meaning-heading-box{
+    max-width: none;
+}
