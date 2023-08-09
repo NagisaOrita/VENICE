@@ -5,7 +5,7 @@ html {
 }
 
 body {
-    font-family: 'Josefin Sans', "yugothic", "yu-gothic", "游ゴシック体", "游ゴシック", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO", sans-serif;
+    font-family: 'Josefin Sans', "yugothic", "yu-gothic", "游ゴシック体", "游ゴシック", "ヒラギノ角ゴ Pro W4", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO", sans-serif;
     height: 100%;
     font-weight: 500;
     font-size: 1.5rem;
@@ -78,19 +78,22 @@ hr {
     --orange: #E5B65B;
 }
 
+.sp {
+    display: none;
+}
 
 /* FONT FONT FONT ------- */
 /* FONT FONT FONT ------- */
 /* FONT FONT FONT ------- */
 
 a {
-    font-family: 'Josefin Sans', "yugothic", "yu-gothic", "游ゴシック体", "游ゴシック", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO", sans-serif;
+    font-family: 'Josefin Sans', "yugothic", "yu-gothic", "游ゴシック体", "游ゴシック", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO", sans-serif;
 }
 
 .catch-copy {
     color: #CBD1DB;
     font-size: 73.799px;
-    font-family: YuGothic;
+    font-family: 'Josefin Sans', "yugothic", "yu-gothic", "游ゴシック体", "游ゴシック", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HG丸ｺﾞｼｯｸM-PRO", "HGMaruGothicMPRO", sans-serif;
     font-weight: 700;
     line-height: 107.492px;
     letter-spacing: 7.38px;
@@ -148,6 +151,7 @@ a {
     font-size: 1.4rem;
     line-height: 3.37rem;
     letter-spacing: 0.255rem;
+    text-align: justify;
 }
 
 .recruit-txt {
@@ -166,7 +170,7 @@ a {
     letter-spacing: 0.3165rem;
 }
 
-.message-txtbox p{
+.message-txtbox p {
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 3.37rem;
@@ -297,10 +301,11 @@ a {
     display: flex;
     justify-content: space-between;
     padding: 34px 46px;
+    align-items: center;
 }
 
 .header-logo {
-    width: 128px;
+    width: 180px;
 }
 
 .header-nav ul {
@@ -515,13 +520,13 @@ a {
 }
 
 .footer-btn-contact {
-    background: #E5B65B;
+    /* background: #E5B65B;
     width: 32rem;
     height: 10.4rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-left: 1px solid var(--blue);
+    border-left: 1px solid var(--blue); */
 }
 
 .footer-btn-contact img {
@@ -553,7 +558,13 @@ a {
 }
 
 .footer-info-l li {
-    margin-bottom: 0.8rem;
+    margin-bottom: 1.2rem;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+}
+
+.footer-info-l li:last-child {
+    margin-bottom: 0;
 }
 
 .footer-contactinfo {
@@ -564,6 +575,7 @@ a {
 
 .footer-info-r {
     margin-left: 4.7rem;
+    font-size: 1.8rem;
 }
 
 .footer-info-r li {
@@ -602,14 +614,277 @@ a {
     }
 }
 
-/* アニメーションの初期設定 */
 .slidein-animate {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1.2s ease-in-out;
+}
+
+.slidein-animate.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.slidein-animate {
+    will-change: transform, opacity;
     opacity: 0;
     transform: translateX(-100%);
 }
 
-/* アニメーションの実行設定 */
-.slidein-animate.active {
-    animation: slide-in 0.5s forwards;
-    transition: all 0.5s ease-in-out;
+
+
+/* BTN ANIMATION */
+/* BTN ANIMATION */
+/* BTN ANIMATION */
+/*== ボタン共通設定 */
+.ft-btn {
+    /*アニメーションの起点とするためrelativeを指定*/
+    position: relative;
+    overflow: hidden;
+    /*ボタンの形状*/
+    text-decoration: none;
+    display: inline-block;
+    /* border: 1px solid #555; */
+    /* ボーダーの色と太さ */
+    /* padding: 10px 30px; */
+    text-align: center;
+    outline: none;
+    /*アニメーションの指定*/
+    transition: ease .2s;
+    background: #E5B65B;
+    width: 32rem;
+    height: 10.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid var(--blue);
 }
+
+/*ボタン内spanの形状*/
+.ft-btn span {
+    position: relative;
+    z-index: 3;
+    /*z-indexの数値をあげて文字を背景よりも手前に表示*/
+    /* color: #333; */
+}
+
+.ft-btn:hover span {
+    color: var(--blue);
+}
+
+/*== 背景が流れる（左から右） */
+.bgleft:before {
+    content: '';
+    /*絶対配置で位置を指定*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    /*色や形状*/
+    /* background: #333; */
+    background: var(--white);
+    /*背景色*/
+    width: 100%;
+    height: 100%;
+    /*アニメーション*/
+    transition: transform .6s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+    transform: scale(0, 1);
+    transform-origin: right top;
+}
+
+/*hoverした際の形状*/
+.bgleft:hover:before {
+    transform-origin: left top;
+    transform: scale(1, 1);
+}
+
+
+/* BURGER MENU */
+/* BURGER MENU */
+/* BURGER MENU */
+
+
+/*　ハンバーガーボタン　*/
+.hamburger {
+    display: block;
+    position: fixed;
+    z-index: 3;
+    right: 13px;
+    top: 12px;
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+.hamburger {
+    display: none;
+}
+
+.hamburger span {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    left: 6px;
+    background: var(--white);
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+
+.hamburger span:nth-child(1) {
+    top: 10px;
+}
+
+.hamburger span:nth-child(2) {
+    top: 20px;
+}
+
+.hamburger span:nth-child(3) {
+    top: 30px;
+}
+
+/* ナビ開いてる時のボタン */
+.hamburger.active span:nth-child(1) {
+    top: 16px;
+    left: 6px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.hamburger.active span:nth-child(2),
+.hamburger.active span:nth-child(3) {
+    top: 16px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+nav.globalMenuSp ul::before {
+    content: "";
+    display: inline;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/v-logo.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: cover;
+    background-position: 70% center;
+    opacity: .5;
+    background-blend-mode: overlay;
+    mix-blend-mode: overlay;
+}
+
+nav.globalMenuSp {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    color: var(--white);
+    background: #fff;
+    text-align: center;
+    transform: translateX(100%);
+    transition: all 0.6s;
+    width: 100%;
+    height: 100vh;
+    /* background-image: url(../images/v-logo.png); */
+    background: radial-gradient(circle at bottom, #000d18 0%, #00558d 50%, #40bced 100%);
+}
+
+nav.globalMenuSp ul::before {
+    content: "株式会社Venice";
+    display: inline;
+    font-size: 36px;
+    position: absolute;
+    top: 0;
+}
+
+nav.globalMenuSp ul::after {
+    content: "生まれ変わろう、共に";
+    display: inline;
+    font-size: 36px;
+    position: absolute;
+    bottom: 0;
+    color: var(--white);
+}
+
+nav.globalMenuSp ul {
+    background: #ccc;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.globalMenuSp .gnavi {
+    justify-content: center;
+    background: linear-gradient(to bottom left, rgba(0, 255, 255, 0.8), rgba(30, 110, 200, 0.85), rgba(15, 30, 60, 0.95));
+}
+
+nav.globalMenuSp ul li {
+    list-style-type: none;
+    padding: 0;
+    width: 70%;
+    border-bottom: 1px solid #fff;
+    margin: 0 auto;
+}
+
+nav.globalMenuSp ul li:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+nav.globalMenuSp ul li:hover {
+    background: #ddd;
+}
+
+nav.globalMenuSp ul li a {
+    display: block;
+    color: var(--white);
+    padding: 1em 0;
+    text-decoration: none;
+}
+
+/* このクラスを、jQueryで付与・削除する */
+nav.globalMenuSp.active {
+    transform: translateX(0%);
+    z-index: 4;
+}
+
+
+/* MEMBER HOVER */
+/* MEMBER HOVER */
+/* MEMBER HOVER */
+/* MEMBER HOVER */
+.member-item a:hover {
+    opacity: .5;
+}
+
+.member-item a:hover .member-btn {
+    width: 70px;
+    margin-top: 0;
+}
+
+.member-item a,
+.member-btn {
+    transition: all .3s ease;
+}
+
+/* RECRUIT BTN HOVER */
+/* RECRUIT BTN HOVER */
+/* RECRUIT BTN HOVER */
+.recruit-btnbox a:hover {
+    opacity: .5;
+    width: 110%;
+}
+
+.recruit-btnbox a {
+    transition: all .3s ease;
+    width: 100%;
+}
+
+

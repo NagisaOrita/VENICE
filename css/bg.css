@@ -80,59 +80,16 @@ html {
 
 .v-logo-bg {
     position: fixed;
-    width: 300px;
-    
+    width: 1300px;
     opacity: .5;
     background-blend-mode: overlay;
     mix-blend-mode: overlay;
 }
 
 .v-logo-bg {
-    width: 300px;
+    width: 1800px;
     position: fixed;
-    top: 20px;
-    left: 20px;
+    top: 0px;
+    left: -200px;
     perspective: 1000px;
-}
-
-.v-logo-bg img {
-    width: 100%;
-    height: auto;
-    position: relative;
-    transform-style: preserve-3d;
-}
-
-
-.rotate-scale-down {
-    -webkit-animation: rotate-scale-down 0.65s linear both infinite;
-    animation: rotate-scale-down 0.65s linear both infinite;
-}
-
-.rotate-scale-down {
-    animation: rotate-scale-down 0.65s linear 5s infinite;
-    animation-delay: 3s;
-    /* delay before the animation starts */
-    animation-duration: 2s;
-    /* actual duration of the animation */
-}
-
-.rotate-scale-down {
-    animation: rotate-scale-down 6.25s linear both infinite;
-}
-
-@keyframes rotate-scale-down {
-
-    0%,
-    4% {
-        transform: scale(1) rotateZ(0);
-    }
-
-    8% {
-        transform: scale(0.9) rotateY(180deg);
-    }
-
-    12%,
-    100% {
-        transform: scale(1) rotateY(360deg);
-    }
 }

@@ -1,0 +1,286 @@
+.chuuto-wrapper {
+    margin: 0 auto;
+}
+
+.p-recruit-wrapper {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 1040px;
+}
+
+.p-recruit-heading {
+    display: inline;
+    margin: 0 auto;
+    /* text-align: center; */
+}
+
+table {
+    margin: 0 auto;
+    margin-bottom: 4rem;
+}
+
+.heading-txt {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.Subtitle {
+    padding-right: 20px;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+tr {
+    border-bottom: solid 1px var(--white);
+}
+
+.NormalText {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.lv3-heading {
+    font-size: 3.2rem;
+    text-align: center;
+}
+
+.consulting-wrapper {
+    margin-top: 20rem;
+    margin-bottom: 20rem;
+}
+
+.chuuto-wrapper {
+    margin-top: 8rem;
+}
+
+.p-recruit-btn {
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.p-recruit-btn a {
+    padding: 2rem 4rem;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #92E3E8 0%, #69BFE7 100%);
+    background: linear-gradient(270deg, #92E3E8 0%, #69BFE7 25%, #69BFE7 51%, #92E3E8 100%);
+    background-position: 1% 50%;
+    background-size: 200% auto;
+    /*アニメーションの指定*/
+    transition: all 0.3s ease-out;
+}
+
+.p-recruit-btn span {
+    font-size: 2rem;
+}
+
+.p-recruit-btn a:hover {
+    color: #fff;
+    background-position: 99% 50%;
+}
+
+@media (max-width: 798px) {
+    .Subtitle {
+        margin-bottom: 0;
+    }
+
+    .chuuto-wrapper {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .p-recruit-heading .lv3-heading {
+        font-size: 2.4rem;
+    }
+
+    .p-recruit-heading .Subtitle {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+
+    .chuuto-wrapper table {
+        margin-bottom: 1rem;
+    }
+
+    .chuuto-wrapper .Subtitle {
+        text-align: left;
+    }
+
+    .chuuto-wrapper .NormalText {
+        padding: 10px;
+    }
+
+    .chuuto-wrapper .p-recruit-btn a {
+        padding: 1rem 2rem;
+        font-size: 1.6rem;
+    }
+
+    .consulting-wrapper {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .consulting-wrapper .lv3-heading {
+        font-size: 2.4rem;
+    }
+
+    .consulting-wrapper .Subtitle {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+
+    .consulting-wrapper table {
+        margin-bottom: 1rem;
+    }
+
+    .consulting-wrapper .Subtitle {
+        text-align: left;
+    }
+
+    .consulting-wrapper .NormalText {
+        padding: 10px;
+    }
+
+    .consulting-wrapper .p-recruit-btn a {
+        padding: 1rem 2rem;
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .chuuto-wrapper table,
+    .consulting-wrapper table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 1rem;
+    }
+
+    .chuuto-wrapper th,
+    .chuuto-wrapper td,
+    .consulting-wrapper th,
+    .consulting-wrapper td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: solid 1px var(--white);
+        /* PC版と同じ色に設定 */
+    }
+
+    .chuuto-wrapper td.Subtitle,
+    .consulting-wrapper td.Subtitle {
+        border-bottom: none;
+        /* Subtitleセルのボーダーボトムを削除 */
+    }
+
+
+    .p-recruit-wrapper {
+        width: 100%;
+        max-width: none;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .p-recruit-heading .lv3-heading {
+        font-size: 2.4rem;
+    }
+
+    .p-recruit-heading .Subtitle {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    table {
+        margin-bottom: 1rem;
+    }
+
+    tr {
+        display: block;
+        margin-bottom: 1rem;
+        border-bottom: none;
+    }
+
+    td.Subtitle,
+    td.NormalText {
+        display: block;
+        padding: 10px;
+        text-align: left;
+    }
+
+    .chuuto-wrapper .Subtitle,
+    .chuuto-wrapper .NormalText {
+        padding: 10px;
+    }
+
+    .p-recruit-btn a {
+        padding: 1rem 2rem;
+        font-size: 1.6rem;
+    }
+
+    .consulting-wrapper {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .consulting-wrapper .lv3-heading {
+        font-size: 2.4rem;
+    }
+
+    .consulting-wrapper .Subtitle {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .consulting-wrapper table {
+        margin-bottom: 1rem;
+    }
+
+    .consulting-wrapper tr {
+        display: block;
+        margin-bottom: 1rem;
+        border-bottom: none;
+    }
+
+    .consulting-wrapper .Subtitle,
+    .consulting-wrapper .NormalText {
+        padding: 10px;
+    }
+
+    .consulting-wrapper .p-recruit-btn a {
+        padding: 1rem 2rem;
+        font-size: 1.6rem;
+    }
+
+    .chuuto-wrapper {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .consulting-wrapper {
+        margin-top: 12rem;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .pc {
+        display: none;
+    }
+
+    .consulting-wrapper .Subtitle {
+        text-align: left;
+        /* テキストを左寄せに設定 */
+        padding-right: 20px;
+        /* 右側の余白を追加 */
+        margin: 0;
+        font-weight: 700;
+        font-size: 1.8rem;
+    }
+    .Subtitle{
+        font-weight: 700;
+        font-size: 1.8rem;
+    }
+
+}

@@ -1,0 +1,428 @@
+@media screen and (max-width: 959px) {
+    /* 959px以下に適用されるCSS（タブレット用） */
+
+    .hamburger {
+        display: block;
+    }
+    .header-nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .sp {
+        display: block;
+    }
+
+    /* 480px以下に適用されるCSS（スマホ用） */
+    .header-nav {
+        display: none;
+    }
+
+    .header-logo {
+        width: 120px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .catch-copy {
+        font-size: 3.326rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 4.8445rem;
+        letter-spacing: 0.3326rem;
+    }
+
+    .header-inner {
+        padding-top: 2.0rem;
+        padding-left: 1.8rem;
+    }
+
+    .lv2-heading img {
+        height: auto;
+    }
+
+    .about-content {
+        flex-direction: column;
+        margin: 3rem 2rem 8rem;
+        text-align: left;
+        align-items: start;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .about-title {
+        color: #DDE6F6;
+        font-size: 3.209rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 4.0096rem;
+        letter-spacing: 0.3209rem;
+    }
+
+    .about-txt {
+        width: auto;
+        margin-top: 2rem;
+    }
+
+    .about-button {
+        margin-right: 20px;
+    }
+
+    .sub-title {
+        font-size: 1.875rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.2438rem;
+    }
+
+    .business-box {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .business-img {
+        /* width: 30rem;
+        height: 14rem; */
+        overflow: hidden;
+        width: auto;
+        height: auto;
+    }
+
+    .business-img img {
+        /* width: 100%; */
+        /* width: auto; */
+        object-fit: cover;
+    }
+
+    .business-txtbox {
+        width: auto;
+        margin: 0 2rem;
+    }
+
+    .business-box:nth-child(odd) {
+        margin-left: 0px;
+    }
+
+    .business-box:nth-child(even) {
+        margin-right: 0px;
+    }
+
+    .business-box-title {
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.04rem;
+    }
+
+    .business-en {
+        font-size: 1.637rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.0327rem;
+    }
+
+    .business-box:nth-child(even) .business-img {
+        order: 1;
+        margin-right: 20px;
+    }
+
+    .business-box:nth-child(even) .business-txtbox {
+        order: 2;
+    }
+
+    .business-box:nth-child(odd) .business-img {
+        margin-left: 20px;
+    }
+
+
+    /* MEMBER */
+    /* MEMBER */
+    /* MEMBER */
+    .member-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .member-name-box {
+        width: 32.4rem;
+    }
+
+    .member-item {
+        margin-bottom: 4rem;
+    }
+
+    /* RECRUIT */
+    /* RECRUIT */
+    /* RECRUIT */
+    #recruit {
+        margin-top: 10rem;
+    }
+
+    .recruit-txt {
+        font-size: 1.612rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .recruit-txtbox {
+        height: 200px;
+    }
+
+    .recruit-btnbox {
+        width: 55px;
+        bottom: -33%;
+        top: auto;
+        right: 0;
+        transform: translate(0%, 0%);
+    }
+
+    .recruit-btn-txt {
+        font-size: 0.8661rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.6384rem;
+    }
+
+    .recruit-wrapper {
+        padding: 30px 15px 20px 15px;
+        margin: 0 20px;
+    }
+
+    .recruit-title {
+        top: -7%;
+    }
+
+    /* FOOTER */
+    /* FOOTER */
+    /* FOOTER */
+    .footer-up {
+        flex-direction: column;
+        flex-direction: column-reverse;
+        align-items: start;
+    }
+
+    .footer-dwn {
+        flex-direction: column-reverse;
+    }
+
+    .copyright {
+        white-space: nowrap;
+    }
+
+    .ft-btn {
+        width: 100vw;
+    }
+
+    .gnavi {
+        flex-direction: column;
+    }
+
+    .footer-nav {
+        padding: 3rem 2rem;
+    }
+
+    .footer-nav li:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+
+    .footer-contactinfo {
+        border-left: none;
+    }
+
+    .footer-info-r {
+        margin-left: 0rem;
+        padding: 3rem 2rem;
+    }
+
+    .footer-info {
+        border-top: 1px solid var(--blue);
+    }
+
+    .footer-info-l {
+        margin: 0;
+        padding: 3rem 2rem;
+    }
+
+
+    /* COMAPNY PAGE */
+    /* COMAPNY PAGE */
+    /* COMAPNY PAGE*/
+    #message {
+        margin-top: 4rem;
+    }
+
+    .message-content {
+        flex-direction: column-reverse;
+        margin-left: 0;
+    }
+
+    .message-txtbox {
+        margin: 0 20px;
+    }
+
+    .agl-list {
+        font-size: 2.065rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-decoration-line: underline;
+    }
+
+    .info-contents {
+        flex-direction: column;
+        margin: 0 20px;
+    }
+
+    .info td {
+        padding-right: 3rem;
+        white-space: nowrap;
+    }
+
+    .info-contents-r,
+    .info-contents-l {
+        width: 100%;
+    }
+
+    .info-contents-r table,
+    .info-contents-l table {
+        width: 100%;
+    }
+
+    /* MEMBERS PAGE */
+    /* MEMBERS PAGE */
+    /* MEMBERS PAGE */
+    #member-page .normal-txt{
+        text-align: justify;
+    }
+    .person-info-wrapper {
+        flex-direction: column;
+        gap: 5rem;
+        margin: 0 2rem;
+        margin-top: 4rem;
+    }
+    .person-info-list:last-child {
+        font-size: 1.9014rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.9014rem;
+        letter-spacing: 0.4563rem;
+    }
+
+    .person-info-txt{
+        width: auto;
+    }
+
+    .person-info-title,
+    .member-voice-title {
+        font-size: 2.073rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 3.7076rem;
+        letter-spacing: 0.0217rem;
+    }
+
+    .our-reborn-inner {
+        flex-direction: column-reverse;
+        padding-left: 0;
+        padding-right: 0;
+        gap: 3rem;
+    }
+
+    .member-voice-txtbox-heading-box {
+        text-align: right;
+    }
+
+    /* .story-title {
+        font-size: 1.715rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 2.68rem;
+        letter-spacing: 0.0281rem;
+        margin-bottom: 3rem;
+    } */
+
+    .member-voice-txtbox {
+        margin: 0 2rem;
+    }
+
+    .member-voice-subtitle {
+        margin-bottom: 2rem;
+    }
+
+    .member-voice-img1 {
+        width: 20.5rem;
+        height: 27.6rem;
+        flex-shrink: 0;
+    }
+
+    .our-reborn-inner {
+        background-size: 50%;
+        background-position-y: 30.6rem;
+    }
+
+    .meaning-inner {
+        background-size: contain;
+    }
+
+    .future-inner {
+        flex-direction: column-reverse;
+        padding-left: 0;
+        padding-right: 0;
+        background-size: 75%;
+        gap: 4rem;
+        background-position-y: 21rem;
+    }
+
+    .future-heading-box {
+        text-align: left;
+    }
+
+    .member-voice-img2 {
+        width: 25.6rem;
+        height: 17rem;
+    }
+
+    .member-img {
+        overflow: hidden;
+        height: 20rem;
+        background-size: contain;
+    }
+    #our-reborn,
+    #meaning,
+    #future{
+        margin-top: 8rem;
+    }
+    #about-person{
+        margin-top: 2rem;
+    }
+
+    /* MEMBER BOX (INDEX AND MEMBER PAGE )*/
+    .member-img{
+        width: 60%;
+    }
+    .member-item a{
+        display: flex;
+    }
+    .member-name-box{
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 40px;
+    }
+    .member-name-heading{
+        font-size: 2rem;
+        margin-top: 0;
+    }
+    .member-btn{
+        width: 30px;
+    }
+    .member-box{
+        margin-left: 20px;
+    }
+}

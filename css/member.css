@@ -1,3 +1,6 @@
+#about-person{
+    margin-top: 8rem;
+}
 .person-info-wrapper {
     display: flex;
     justify-content: center;
@@ -37,8 +40,12 @@
 /* 生まれ変わりセクション */
 /* 生まれ変わりセクション */
 /* 生まれ変わりセクション */
+#our-reborn{
+    margin-top: 16rem;
+}
 .our-reborn-inner {
     display: flex;
+    justify-content: center;
     gap: 12rem;
     background-image: url(../images/bg-title-our-reason.png);
     background-repeat: no-repeat;
@@ -74,11 +81,14 @@
 /* MEANING */
 /* MEANING */
 /* MEANING */
+#meaning{
+    margin-top: 12rem;
+}
 .meaning-inner{
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    background-image: url(../images/sub-title-meaning.png);
+    background-image: url(../images/bg-title-meaning.png);
     background-repeat: no-repeat;
     background-position-x: center;
 }
@@ -88,4 +98,34 @@
 }
 .meaning-heading-box{
     max-width: none;
+}
+
+
+
+/* FUTURE */
+/* FUTURE */
+/* FUTURE */
+#future{
+    margin-top: 12rem;
+}
+.future-inner{
+    display: flex;
+    justify-content: center;
+    background-image: url(../images/bg-title-vision.png);
+    background-repeat: no-repeat;
+    align-items: flex-end;
+    gap: 8.3rem;
+    padding-left: 11rem;
+    padding-right: 9rem;
+}
+.member-voice-img2{
+    max-width: 50.6rem;
+}
+.future-heading-box{
+    max-width: none;
+}
+
+/* TEXT JUSTIFY */
+.normal-txt{
+    text-align: justify;
 }

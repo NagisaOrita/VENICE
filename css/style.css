@@ -9,9 +9,26 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    will-change: transform, opacity;
 }
 
+.catch-copy{
+	filter: blur(100px);
+	animation: blur-anim2 2s linear forwards;
+    -webkit-backface-visibility:hidden;
+    backface-visibility:hidden;
+}
 
+@keyframes blur-anim2 {
+	100% {	filter: blur(0); }
+}
+/* 
+@media (max-width: 600px) {
+    .catch-copy {
+        filter: initial;
+        animation: initial;
+    }
+} */
 
 /* SCROLL部分 アニメーション */
 #scroll {
@@ -25,7 +42,7 @@
     overflow-y: hidden;
     /* 変更：縦スクロールを無効にするためにhiddenを指定 */
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
 }
 
 .scroll-list {
@@ -38,7 +55,7 @@
 .slideshow-list {
     display: inline-flex;
     /* 変更：水平方向に並べるためにinline-flexを指定 */
-    animation: loop-slide 50s infinite linear;
+    animation: loop-slide 35s infinite linear;
 }
 
 .slideshow {
@@ -64,7 +81,7 @@
 
 .is-reverse-slide {
     margin-left: -100%;
-    animation: loop-slide-r 50s infinite linear reverse;
+    animation: loop-slide-r 40s infinite linear reverse;
 }
 
 @keyframes loop-slide-r {
@@ -96,9 +113,10 @@
 /* ABOUT */
 /* ABOUT */
 /* ABOUT */
-#about{
+#about {
     margin-top: 8rem;
 }
+
 .about-content {
     display: flex;
     align-items: center;
@@ -113,7 +131,8 @@
     font-size: 1.8rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 5rem;
+    line-height: 4.3rem;
+    text-align: justify;
 }
 
 .about-button {
@@ -141,15 +160,16 @@
     justify-content: space-between;
 }
 
-.member-btn a {
-    width: 50%;
-    height: 50%;
+.member-btn p {
+    color: var(--white);
 }
 
 .member-btn {
-    display: flex;
+    /* display: flex; */
+    margin-top: 10px;
     align-items: center;
     justify-content: center;
+    width: 60px;
 }
 
 .member-box {
@@ -163,6 +183,7 @@
 .member-img {
     width: 32.4rem;
     height: 40rem;
+    overflow: hidden;
 }
 
 .position {
@@ -200,6 +221,8 @@
 .business-img {
     width: 50rem;
     height: 27rem;
+    overflow: hidden;
+    
 }
 
 .business-box {
@@ -216,7 +239,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     margin-top: 5rem;
+    flex-direction: column;
 }
 
 .business-box {
@@ -224,8 +249,17 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 7rem;
+    margin-bottom: 12rem;
     gap: 8rem;
+    max-width: 105.6rem;
+}
+
+.business-box:nth-child(odd) {
+    margin-left: 33px;
+}
+
+.business-box:nth-child(even) {
+    margin-right: 33px;
 }
 
 .business-box:nth-child(odd) .business-img {
@@ -260,3 +294,4 @@
     margin-top: 1.1rem;
     margin-left: 1.6rem;
 }
+

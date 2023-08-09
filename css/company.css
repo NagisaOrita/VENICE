@@ -15,10 +15,27 @@
 
 .message-txtbox p {
     white-space: no-wrap;
+    text-align: justify;
 }
 
 .message-img-up {
     margin-bottom: 20px;
+}
+
+.message-img{
+    width: 536px;
+    height: 536px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ceo-name{
+    font-size: 2.0rem!important;
+    margin-top: 2rem;
 }
 
 /* ACTION GUIDE LINE */
@@ -117,4 +134,19 @@
     font-weight: 400;
     line-height: 3.37rem;
     letter-spacing: 0.255rem;
+}
+
+
+/* CEO MESSAGE 編集 7/28 */
+.message-content {
+    margin-top: 5rem;
+    margin-left: 11rem;
+    display: flex;
+    gap: 5.4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.message-txtbox{
+    max-width: 1000px;
 }

@@ -1,0 +1,33 @@
+
+/* VIDEO */
+/* VIDEO */
+/* VIDEO */
+.hero-video{
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    z-index: -2;
+}
+
+video{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.header{
+    position: absolute;
+    width: 100vw;
+    z-index: 3;
+}
+
+.bg-black{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    z-index:-1;
+    opacity: .5;
+}
